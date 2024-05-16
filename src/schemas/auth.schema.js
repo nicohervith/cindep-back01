@@ -18,6 +18,7 @@ export const registerSchema = z.object({
     .min(6, {
       message: "Password must be at least 6 characters",
     }),
+  roles: z.array(z.enum(["user", "admin", "creator"])).optional(),
 });
 
 export const loginSchema = z.object({
