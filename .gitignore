@@ -11,7 +11,9 @@ notes.txt
 
 # production
 /build
-
+/uploads
+/uploads/images
+/uploads/videos
 # misc
 .DS_Store
 .env.local
