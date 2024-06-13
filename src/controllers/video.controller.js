@@ -25,7 +25,6 @@ export const uploadVideo = async (req, res) => {
 
 export const getVideos = async (req, res) => {
   try {
-    // Obtener la lista de videos desde la base de datos
     const videos = await Video.find();
 
     res.json(videos);

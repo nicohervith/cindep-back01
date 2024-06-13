@@ -1,6 +1,6 @@
 import { Router } from "express";
 import upload from "../config/multer-config.js";
-import { getVideos, uploadVideo } from "../controllers/video.controller.js"; // Importar la función correctamente
+import { getVideos, uploadVideo } from "../controllers/video.controller.js"; 
 
 const videoRouter = Router();
 
