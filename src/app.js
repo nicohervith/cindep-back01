@@ -2,6 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import cookieParser from "cookie-parser";
 import cors from "cors";
+import videoRoutes from "./routes/videoRoutes.js";
 
 import authRoutes from "./routes/auth.routes.js";
 
@@ -18,5 +19,6 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
+app.use("/api/video", videoRoutes);
 
 export default app;
