@@ -14,6 +14,8 @@ notes.txt
 /uploads
 /uploads/images
 /uploads/videos
+/uploads/*
+
 # misc
 .DS_Store
 .env.local
