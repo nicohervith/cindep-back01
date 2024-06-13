@@ -13,7 +13,7 @@ export const uploadVideo = async (req, res) => {
       videoUrl,
       imageUrl,
     });
-    console.log("newVideo", newVideo);
+   
     await newVideo.save();
 
     res.status(201).json({ message: "Video uploaded successfully" });
