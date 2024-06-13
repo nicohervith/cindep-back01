@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
-// Rutas de video
+
 app.use("/api/video", videoRoutes);
 
 export default app;

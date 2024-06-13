@@ -4,9 +4,9 @@ import path from "path";
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     if (file.mimetype.startsWith("video/")) {
-      cb(null, "uploads/videos"); // Asegúrate de que esta carpeta exista
+      cb(null, "uploads/videos"); 
     } else if (file.mimetype.startsWith("image/")) {
-      cb(null, "uploads/images"); // Asegúrate de que esta carpeta exista
+      cb(null, "uploads/images"); 
     } else {
       cb(new Error("Solo se permiten archivos de video o imagen"), false);
     }
